@@ -157,9 +157,7 @@ h2 {
     text-shadow: 0.1rem 0.1rem 0.1rem rgb(26, 25, 29);
 }
 
-.bio-pic {
-    display: flex;
-}
+
 
 .about__header--band {
     border-bottom: 2px solid rgb(151, 44, 49);
@@ -252,10 +250,27 @@ h2 {
 
 /* -----MEMBERS-----*/
 
-.members-img {
+.bio-pic {
     display: flex;
+    align-items: flex-start;
     
 }
+
+.bio-pic img {
+    min-width: 0;
+    width: 100%;
+}
+
+.members-img {
+    display: flex;
+    align-items: flex-start;
+}
+
+.members-img img {
+    min-width: 0;
+    width: 100%;
+}
+
 
 .members-header-contain {
     margin: auto;
