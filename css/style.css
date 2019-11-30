@@ -44,7 +44,7 @@ nav {
     background-color: rgb(18, 48, 14);
     font-size: 1.7rem;
     font-weight: 300;
-    border-bottom: 1px solid rgb(243,186,36);
+    border-bottom: 2px solid rgb(243,129,62);
 
 }
 
@@ -512,7 +512,7 @@ footer {
     z-index: 9999;
     width: 100%;
     height: auto;
-    border-top: 1px solid rgb(243,186,36);
+    border-top: 2px solid rgb(243,129,62);
     
 }
 
