@@ -7,6 +7,7 @@ orange: rgb(243,129,62)
 lightergreen:  rgb(79, 134, 70)
 dark-grey: #333333; 
 red: rgb(151, 44, 49);
+blue-green: rgb(33, 109, 153)
 =
 
 */
@@ -44,7 +45,8 @@ nav {
     background-color: rgb(18, 48, 14);
     font-size: 1.7rem;
     font-weight: 300;
-    border-bottom: 2px solid rgb(243,129,62);
+    border-bottom: 2px solid rgb(33, 109, 153);
+    padding: 0.75rem;
 
 }
 
@@ -505,14 +507,14 @@ video {
 
 footer {
     background-color: rgb(18, 48, 14);
-    padding: 0.5rem;
+    padding: 0.75rem;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 9999;
     width: 100%;
     height: auto;
-    border-top: 2px solid rgb(243,129,62);
+    border-top: 2px solid rgb(33, 109, 153);
     
 }
 
