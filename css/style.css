@@ -381,15 +381,6 @@ video {
     margin-bottom: 2rem;
 }
 
-.success {
-    background-color: #26581D;
-}
-
-.error {
-    background-color: #981B21;
-}
-
-
 .form-list li {
     display: flex;
     flex-wrap: wrap;
