@@ -223,7 +223,7 @@ h2 {
     z-index: 1; 
 }
 
-.venue-link, .venue-link:visited, .empty-link {
+.venue-link:active, .venue-link:visited, .empty-link:active .empty-link:visited {
     text-decoration: none;
 }
 
