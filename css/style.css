@@ -425,7 +425,7 @@ video {
 }
 
 .form-list > li > label {
-    flex: 1 0 120px;
+    flex: 1 0 220px;
     max-width: 220px;
 }
 
@@ -625,11 +625,6 @@ i {
     
 }
 
-@media screen and (max-width: 400px) {
-    nav {
-        font-size: 
-    }
-}
 
 @media screen and (max-height: 400px) {
     .hero-section h1 {
