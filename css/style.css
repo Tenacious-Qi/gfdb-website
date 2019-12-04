@@ -143,10 +143,6 @@ nav {
     justify-content: center;
 }
 
-.members {
-    background-color: rgb(18, 48, 14);
-}
-
 
 h2 {
     text-align: center;
@@ -156,7 +152,6 @@ h2 {
     letter-spacing: 0.5rem;
     text-shadow: 0.1rem 0.1rem 0.1rem rgb(26, 25, 29);
 }
-
 
 
 .about__header--band {
@@ -212,9 +207,6 @@ h2 {
     border-left: .75px solid rgb(243,186,36);
     border-right: .75px solid rgb(243,186,36);
     border-radius: 20px;
-    /* border: 1px dashed rgb(243,186,36);
-    border-radius: 10px; */
-
 }
 
 .event:hover {
@@ -239,13 +231,16 @@ h2 {
 .show-date, 
 .show-venue {
     padding: 2rem;
-    /* margin-left: 20%; */
 }
 
 
 
 
 /* -----MEMBERS-----*/
+
+.members {
+    background-color: rgb(18, 48, 14);
+}
 
 .bio-pic {
     display: flex;
