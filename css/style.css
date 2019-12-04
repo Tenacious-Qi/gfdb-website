@@ -175,6 +175,10 @@ h2 {
     padding: 0.5rem;
 }
 
+
+
+/* -----SHOWS-----*/
+
 .shows-header {
     border-bottom: 1px solid rgb(243,186,36);
     padding-bottom: 1.5rem;
@@ -183,10 +187,7 @@ h2 {
 
 .shows-header-container {
     margin: auto;
-    
 }
-
-/* -----SHOWS-----*/
 
 .shows {
     background-color: rgb(18, 48, 14);
