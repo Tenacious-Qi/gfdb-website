@@ -17,8 +17,6 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
-    
-
 }
 *, *::before, *::after {
     margin: 0;
@@ -62,7 +60,7 @@ nav {
 }
 
 .nav-links:first-child {
-    margin-left: 10%;
+    margin-left: 11%;
 }
 
 .nav-links a {
@@ -121,7 +119,7 @@ nav {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     border-radius: 10rem;
     position: relative;
     font-size: 1.5rem;
@@ -206,7 +204,7 @@ h2 {
     flex-wrap: wrap;
     font-size: 2.5rem;
     letter-spacing: 0.4rem;
-    margin: 2rem;
+    margin: 3rem;
     border-radius: 65px;
     padding: 2rem;
     position: relative;
@@ -221,10 +219,6 @@ h2 {
 .event:hover {
     color: rgb(243,186,36);
     transition: 0.3s;
-}
-
-.event:first-child {
-    margin-top: 3rem;
 }
 
 .empty-link {
@@ -311,6 +305,10 @@ h2 {
 
 /* -----VIDEO-----*/
 
+.video {
+    margin: 0 1rem;
+}
+
 .video-header {
     display: flex;
     justify-content: center;
@@ -324,8 +322,7 @@ h2 {
 
 video {
     width: 100%;
-    height: auto;
-    padding: 2rem 0;
+    height: auto
 }
 .iframes {
     display: flex;
@@ -530,11 +527,6 @@ ion-icon:hover {
     transition: 0.3s;
 }
 
-/* .social-links > li {
-    padding: 0 4rem;
-    
-} */
-
 i {
     color: rgb(243,186,36);
     font-size: 175%;
@@ -543,22 +535,15 @@ i {
 /* -----MEDIA QUERIES-----*/
 
 @media screen and (min-width: 800px) {
-    /* .show-date, 
-    .show-venue {
-      margin-left: 20%;
-    } */
+
     .about__header--description {
-        margin: 2rem 5rem;
+        margin: 2rem 10rem;
     }
 }
 @media screen and (min-width: 1200px) {
-    /* .show-date, 
-    .show-venue {
-      margin-left: 21.5%;
-    } */
+    
     .event {
-        font-size: 4rem;
-
+        font-size: 3rem;
     }
     .shows-list span {
         font-size: 2.5rem;
@@ -567,13 +552,6 @@ i {
         margin: 2rem 20rem;
     }
 
-}
-
-@media screen and (min-width: 1600px) {
-    /* .show-date,
-    .show-venue {
-        margin-left: 23.5%;
-    } */
 }
 
 @media screen and (max-width: 600px) {
@@ -586,14 +564,14 @@ i {
     }
 
     .about__header--description {
-        font-size: 1.2rem;
-        margin: 0.5rem 2rem;
+        font-size: 1.6rem;
+        margin: 1rem 3rem;
     }
 
     .btn:link,
     .btn:visited {
-        font-size: 1rem;
-        padding: 1rem;
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
     }
 
 
@@ -626,9 +604,8 @@ i {
 
     .lineup .name {
         font-size: 1.3rem;
-
     }
-
+    
     .lineup .instrument {
         font-size: 1.25rem;
     }
@@ -650,4 +627,28 @@ i {
         font-size: 1.25rem;
     }
     
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        font-size: 
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .hero-section h1 {
+        font-size: 1.6rem;
+    }
+    .hero-section h5 {
+        font-size: 1.4rem;
+    }
+    .btn:link,
+    .btn:visited {
+        font-size: 1.1rem;
+        padding: 1rem 1.8rem;
+    }
+
+    .hero-section {
+        height: 100vh;
+    }
 }
