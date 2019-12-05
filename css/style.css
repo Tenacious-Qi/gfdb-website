@@ -607,6 +607,15 @@ i {
     }    
 }
 
+@media screen and (max-width: 400px) {
+    .event:hover {
+        box-shadow: none;
+    }
+    footer {
+        padding: .25rem;
+    }
+}
+
 
 @media screen and (max-height: 400px) {
     .hero-section h1 {
