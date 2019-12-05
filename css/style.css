@@ -276,7 +276,7 @@ h2 {
 }
 .lineup {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding: 3rem;
@@ -286,7 +286,7 @@ h2 {
 .lineup .name {
     font-size: 1.8rem;
     font-weight: 600;
-    text-align: right;
+    text-align: center;
 
 }
 
@@ -300,10 +300,9 @@ h2 {
 } 
 
 .member {
-    padding: 1rem;
+    padding: 1.2rem;
     
 }
-
 /* -----VIDEO-----*/
 
 .video {
@@ -583,11 +582,11 @@ i {
     }
 
     .lineup .name {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
     
     .lineup .instrument {
-        font-size: 1.55rem;
+        font-size: 1.6rem;
     }
 
     .form-messages {
