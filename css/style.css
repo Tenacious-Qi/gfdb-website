@@ -207,11 +207,17 @@ h2 {
     border-left: .75px solid rgb(243,186,36);
     border-right: .75px solid rgb(243,186,36);
     border-radius: 20px;
+    max-width: 380px;
+    max-height: 340px;
 }
 
 .event:hover {
     color: rgb(243,186,36);
-    transition: 0.3s
+    transition: 0.3s;
+    box-shadow: 1px 1px 1px 1px rgb(151, 44, 49);
+    border: 0;
+    
+
 }
 
 .empty-link {
@@ -233,9 +239,6 @@ h2 {
 .show-venue {
     padding: 2rem;
 }
-
-
-
 
 /* -----MEMBERS-----*/
 
@@ -390,7 +393,6 @@ video {
     padding: 0;
 }
 
-
 .form-list li:first-child {
 
     text-transform: uppercase;
@@ -450,13 +452,9 @@ video {
     margin-bottom: 2rem;
 }
 
-
-
 /* -----GALLERY-----*/
 
-
 .gallery-header {
-   /* margin: auto; */
    display: flex;
    justify-content: center;
 }
@@ -476,12 +474,9 @@ video {
 
 .images img {
     padding: 1rem;
-    
-    /* max-height: 250px; */
 }
 
 .images img:hover {
-    /* filter: grayscale(100%); */
     transform: scale(1.090);
     transition: .4s;
 }
@@ -492,7 +487,7 @@ video {
 
 footer {
     background-color: rgb(18, 48, 14);
-    padding: 0.75rem;
+    padding: 0.45rem;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -613,8 +608,7 @@ i {
 
     .contact-info {
         font-size: 1.25rem;
-    }
-    
+    }    
 }
 
 
@@ -634,4 +628,6 @@ i {
     .hero-section {
         height: 100vh;
     }
+
+
 }
