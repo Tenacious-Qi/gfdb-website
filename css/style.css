@@ -214,8 +214,6 @@ h2 {
 .event:hover {
     color: rgb(243,186,36);
     transition: 0.3s;
-    box-shadow: 1px 1px 1px 3px rgb(151, 44, 49);
-    border: 0;
 }
 
 .empty-link {
@@ -522,6 +520,10 @@ i {
     .about__header--description {
         margin: 2rem 10rem;
     }
+    footer {
+        padding: .25rem;
+    }
+
 }
 @media screen and (min-width: 1200px) {
     
@@ -608,9 +610,6 @@ i {
 }
 
 @media screen and (max-width: 400px) {
-    .event:hover {
-        box-shadow: none;
-    }
     footer {
         padding: .25rem;
     }
