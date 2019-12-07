@@ -54,7 +54,7 @@ nav {
 }
 
 .logo {
-    margin-left: 1.5rem;
+    margin-left: 2rem;
 }
 
 .nav-links {
@@ -73,8 +73,12 @@ nav {
     color: rgb(243,186,36);
     letter-spacing: 0.5rem;
     text-shadow: 0.1rem 0.1rem 0.1rem #000;
-    text-align: center;
+    text-align: justify;
     display: block;
+}
+
+.nav-links a:first-child {
+    margin-left: 20%;
 }
 
 .nav-item:hover a {
