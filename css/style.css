@@ -53,20 +53,16 @@ nav {
     justify-content: center;
 }
 
-.logo {
-    margin-left: 5rem;
-}
 
 .nav-links {
-    list-style: none;
     display: flex;
-    flex: 1;
+    justify-content: space-around;
+    list-style: none;
     flex-wrap: wrap;
+    flex: 1;
 }
 
-.nav-links > li {
-    flex: 1;
-}
+
 
 .nav-links a {
     text-decoration: none;
@@ -74,16 +70,16 @@ nav {
     letter-spacing: 0.5rem;
     text-shadow: 0.1rem 0.1rem 0.1rem #000;
     text-align: justify;
-    display: block;
-}
-
-.nav-links a:first-child {
-    margin-left: 20%;
+    
 }
 
 .nav-item:hover a {
     color: #eee;
     transition: 0.3s;
+}
+
+.logo {
+    padding: 0 2rem;
 }
 
 
@@ -506,11 +502,23 @@ footer {
     
 }
 
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .social-links {
     display: flex;
     justify-content: space-around;
     list-style: none;
     flex-wrap: wrap;
+    flex: 1;
+}
+
+
+.logo-joint {
+    padding: 0 1.8rem .7rem 1.8rem;
 }
 
 ion-icon:hover {
@@ -551,6 +559,10 @@ i {
 
 @media screen and (max-width: 600px) {
     
+    .nav-left a {
+        margin: 0 .8rem;
+    }
+    
     .hero-section h1 {
         font-size: 2rem;
     }
@@ -567,11 +579,6 @@ i {
     .btn:visited {
         font-size: 1.2rem;
         padding: 1rem 2rem;
-    }
-
-
-    .nav-links > li {
-        flex-basis: 50%;
     }
 
     nav {
@@ -619,16 +626,6 @@ i {
     }    
 }
 
-@media screen and (max-width: 400px) {
-    footer {
-        padding: .25rem;
-    }
-    .logo {
-        margin-left: 2rem;
-    }
-
-}
-
 
 @media screen and (max-height: 450px) {
     .hero-section h1 {
@@ -654,6 +651,10 @@ i {
     h2, h3 {
         font-size: 1.7rem;
 
+    }
+
+    .logo {
+        padding-right: 15px;
     }
 
 }
