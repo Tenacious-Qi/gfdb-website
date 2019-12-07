@@ -45,37 +45,41 @@ nav {
     font-weight: 300;
     border-bottom: 2px solid rgb(79, 134, 70);
     padding: 0.5rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
-    list-style: none;
 }
 
 .nav-links > li {
     flex: 1;
-}
-
-.nav-links:first-child {
-    margin-left: 11%;
+    
 }
 
 .nav-links a {
-    text-decoration: none;
     text-decoration: none;
     color: rgb(243,186,36);
     letter-spacing: 0.5rem;
     text-shadow: 0.1rem 0.1rem 0.1rem #000;
     text-align: center;
+    display: block;
 }
 
 .nav-item:hover a {
     color: #eee;
     transition: 0.3s;
 }
+
 
 /* -----HEADING-----*/
 
@@ -613,6 +617,7 @@ i {
     footer {
         padding: .25rem;
     }
+
 }
 
 
