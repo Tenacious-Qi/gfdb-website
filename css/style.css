@@ -54,7 +54,7 @@ nav {
 }
 
 .logo {
-    margin-left: 2rem;
+    margin-left: 5rem;
 }
 
 .nav-links {
@@ -622,6 +622,9 @@ i {
 @media screen and (max-width: 400px) {
     footer {
         padding: .25rem;
+    }
+    .logo {
+        margin-left: 2rem;
     }
 
 }
