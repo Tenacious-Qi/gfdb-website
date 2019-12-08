@@ -79,7 +79,9 @@ nav {
 }
 
 .logo {
-    padding: 0 2rem;
+
+    border-radius: 20px;
+    padding: 0 .2rem;
 }
 
 
@@ -262,11 +264,13 @@ h2 {
 .members-img {
     display: flex;
     align-items: flex-start;
+
 }
 
 .members-img img {
     min-width: 0;
     width: 100%;
+
 }
 
 
@@ -471,7 +475,7 @@ video {
 .images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
 }
@@ -623,7 +627,8 @@ i {
 
     .contact-info {
         font-size: 1.25rem;
-    }    
+    }
+    
 }
 
 
@@ -653,8 +658,5 @@ i {
 
     }
 
-    .logo {
-        padding-right: 15px;
-    }
 
 }
