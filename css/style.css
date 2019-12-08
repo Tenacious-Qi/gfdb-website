@@ -313,6 +313,18 @@ h2 {
 }
 /* -----VIDEO-----*/
 
+.fellow-man {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+audio {
+    margin: 2rem 0;
+    width: 100%;
+}
+
 .video {
     margin: 0 1rem;
 }
@@ -377,9 +389,7 @@ video {
     width: 22.5rem;
     height: 22.5rem;
     margin: 0 auto;
-    border-radius: 200px;
-    padding-bottom: 2rem;
-    padding-left: 0.5rem;
+    border-radius: 100px;
 }
 
 .form-messages {
@@ -622,8 +632,8 @@ i {
     }
 
     .gorilla {
-        width: 15rem;
-        height: 15rem;
+        width: 10rem;
+        height: 10rem;
     }
 
     .contact-info {
