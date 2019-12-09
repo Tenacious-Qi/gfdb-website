@@ -313,6 +313,15 @@ h2 {
 }
 /* -----VIDEO-----*/
 
+.video {
+    margin: 0 1rem;
+}
+
+.video-header {
+    display: flex;
+    justify-content: center;
+}
+
 .tracks {
     display: flex;
     flex-direction: column;
@@ -324,14 +333,17 @@ h2 {
     list-style: none;
     margin: 3rem 0;
     padding: 2rem;
-    border: 2px solid rgb(151, 44, 49);
-    border-radius: 30px;
+    border-left: 2px solid rgb(151, 44, 49);
+    border-right: 2px solid rgb(151, 44, 49);
+    border-radius: 20px;
     font-size: 1.6rem;
 }
 
 #playlist span {
     float: right;
     padding-left: 2rem;
+    font-weight: 300;
+    color: rgb(243,129,62);
 }
 
 
@@ -348,7 +360,7 @@ h2 {
 }
 
 #playlist .current-song a {
-    color: rgb(243,129,62);
+    color: rgb(243,186,36);
 }
 
 #playlist hr {
@@ -362,25 +374,20 @@ audio {
 
 .iframes {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 3rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+}
+
+.iframes p {
+    margin-bottom: 2rem;
 }
 
 .bandcamp {
     width: 700px;
     height: 241px;
-    margin-bottom: 3rem;
-}
-
-.video {
-    margin: 0 1rem;
-}
-
-.video-header {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .music {
@@ -392,6 +399,7 @@ audio {
 video {
     width: 100%;
     height: auto
+
 }
 
 
