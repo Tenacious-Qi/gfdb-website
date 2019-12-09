@@ -313,9 +313,9 @@ h2 {
 }
 /* -----VIDEO-----*/
 
-.video {
+/* .video {
     margin: 0 1rem;
-}
+} */
 
 .video-header {
     display: flex;
@@ -330,13 +330,13 @@ h2 {
 }
 
 #playlist {
+
     list-style: none;
     margin: 3rem 0;
     padding: 2rem;
     border-left: 2px solid rgb(151, 44, 49);
     border-right: 2px solid rgb(151, 44, 49);
     border-radius: 20px;
-    font-size: 1.6rem;
 }
 
 #playlist span {
@@ -356,7 +356,7 @@ h2 {
     color: rgb(79, 134, 70);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 #playlist .current-song a {
@@ -367,22 +367,34 @@ h2 {
     margin: 1rem;
 }
 
-
 audio {
-    width: 100%;
+    width: 50rem;
+    margin-left: 2px;
 }
 
-.iframes {
+.tracks p {
+    font-size: 1.43rem;
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.iframe-message {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.iframes {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     font-size: 1.6rem;
 }
 
-.iframes p {
-    margin-bottom: 2rem;
-}
 
 .bandcamp {
     width: 700px;
@@ -396,9 +408,18 @@ audio {
     margin-bottom: 2rem;
 }
 
+.video-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+}
+
 video {
     width: 100%;
-    height: auto
+    height: auto;
 
 }
 
@@ -423,7 +444,7 @@ video {
 
 .col {
     display: flex;
-    flex: 50%;
+    flex: 40%;
     flex-wrap: wrap;
     align-items: center;
     
@@ -507,7 +528,7 @@ video {
 }
 
 .contact-info {
-    padding-left: 1.5rem;
+    margin-left: 4.5rem;
 }
 
 .contact-info:last-child {
@@ -599,6 +620,9 @@ i {
     footer {
         padding: .25rem;
     }
+    audio {
+        width: 70rem;
+    }
 
 }
 @media screen and (min-width: 1200px) {
@@ -611,6 +635,10 @@ i {
     }
     .about__header--description {
         margin: 2rem 20rem;
+    }
+
+    audio {
+        width: 90rem;
     }
 
 }
@@ -682,6 +710,11 @@ i {
 
     .contact-info {
         font-size: 1.25rem;
+        margin-left: 1.5rem;
+}
+
+    audio {
+        width: 320px;
     }
     
 }
@@ -711,6 +744,11 @@ i {
     h2, h3 {
         font-size: 1.7rem;
 
+    }
+
+    .gorilla {
+        height: 15rem;
+        width: 15rem;
     }
 
 
