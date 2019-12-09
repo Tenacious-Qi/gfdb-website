@@ -323,7 +323,12 @@ h2 {
 
 #playlist {
     list-style: none;
-    font-size: 1.5rem;
+    margin: 3rem 0;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid rgb(151, 44, 49);
+    border-radius: 20px;
+    
 }
 
 
@@ -332,18 +337,23 @@ h2 {
 }
 
 #playlist li a {
-    color: #eee;
+    color: rgb(79, 134, 70);
     text-decoration: none;
+    font-weight: 600;
+    font-size: 1.7rem;
 }
 
 #playlist .current-song a {
     color: rgb(243,129,62);
 }
 
+#playlist hr {
+    margin: 1rem;
+}
+
 
 audio {
     width: 100%;
-
 }
 
 .iframes {
