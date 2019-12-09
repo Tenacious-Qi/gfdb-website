@@ -313,13 +313,15 @@ h2 {
 }
 /* -----VIDEO-----*/
 
-/* .video {
-    margin: 0 1rem;
-} */
 
 .video-header {
     display: flex;
     justify-content: center;
+}
+
+audio {
+    width: 50rem;
+    margin-left: 2px;
 }
 
 .tracks {
@@ -328,6 +330,13 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
 }
+
+.tracks p {
+    font-size: 1.43rem;
+    margin: 1.5rem;
+    text-align: center;
+}
+
 
 #playlist {
 
@@ -367,16 +376,8 @@ h2 {
     margin: 1rem;
 }
 
-audio {
-    width: 50rem;
-    margin-left: 2px;
-}
 
-.tracks p {
-    font-size: 1.43rem;
-    margin: 1.5rem;
-    text-align: center;
-}
+
 
 .iframe-message {
     display: flex;
