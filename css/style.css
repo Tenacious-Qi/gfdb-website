@@ -318,23 +318,27 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    font-size: 1.4rem;
 }
 
 #playlist {
     list-style: none;
     margin: 3rem 0;
     padding: 2rem;
-    text-align: center;
     border: 2px solid rgb(151, 44, 49);
-    border-radius: 20px;
-    
+    border-radius: 30px;
+    font-size: 1.6rem;
+}
+
+#playlist span {
+    float: right;
+    padding-left: 2rem;
 }
 
 
 #playlist li {
     padding: 0.3rem;
 }
+
 
 #playlist li a {
     color: rgb(79, 134, 70);
