@@ -175,17 +175,34 @@
 
             <section class="video" id="video">
                     <div class="video-header"><h2 class="music">music</h2></div>
-                    <div class="fellow-man">
-                        <figure>
-                            <figcaption>Check out our new song <em>Fellow Man</em> recorded live at Bayside Bowl in Portland, Maine:</figcaption>
-                            <audio controls>
-                                <source src="audio/02FellowMan_Dub01.mp4" type="audio/mp4">
-                            </audio>
-                        </figure>
+                    <div class="tracks">
+                        <audio src="" controls id="audioPlayer">
+                            <source src="" type="audio/mp4">
+                                Sorry, your browser doesn't support HTML5!
+                        </audio>
+
+                        <ul id="playlist">
+                            <li class="current-song"><a href="audio/Fellow Man_Dub01.mp4">Fellow Man - Live on 4/20</a></li>
+                            <li><a href="audio/Take It Slow.mp4">Take it Slow - Live on 4/20</a></li>
+                            <li><a href="audio/Smokin' Vibe.mp4">Smokin' Vibe - Live on 4/20</a></li>
+                            <li><a href="audio/Child of the Night.mp4">Child of the Night - Live on 4/20</a></li>
+                            <li><a href="audio/Smokin' Vibe.mp4">Smokin' Vibe - Live on 4/20</a></li>
+                            <span>
+                            <li><a href="audio/01 - Busted.mp3">Busted - Cool It Down</a></li>
+                            <li><a href="audio/02 - O Mister Officer.mp3">O Mister Officer - Cool It Down</a></li>
+                            <li><a href="audio/03 - Cool It Down.mp3">Cool It Down - Cool It Down</a></li>
+                            <li><a href="audio/04 - So Lovely.mp3">So Lovely - Cool It Down</a></li>
+                            <li><a href="audio/05 - Step Back.mp3">Step Back - Cool It Down</a></li>
+                            <li><a href="audio/06 - Best Herb.mp3">Best Herb - Cool It Down</a></li>
+                            <li><a href="audio/07 - Kannabosm.mp3">Kannabosm - Cool It Down</a></li>
+                            <li><a href="audio/08 - Hometown.mp3">Hometown - Cool It Down</a></li>
+                            </span>
+                        </ul>
+
 
                     </div>
                     <div class="iframes">
-                        <iframe class="bandcamp" src="https://bandcamp.com/EmbeddedPlayer/album=3574947838/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" allowfullscreen allow="encrypted-media"></iframe>
+                            <iframe class="bandcamp" src="https://bandcamp.com/EmbeddedPlayer/album=3574947838/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" allowfullscreen allow="encrypted-media"></iframe>
                     </div>
                     <video controls><source src="img/gorilla-finger-1-min.mp4" type="video/mp4">Your Browser does not support the video tag</video>
                     
@@ -279,6 +296,8 @@
                 </div>
                 
             </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="js/audioPlayer.js"></script>
     </body>
     
 </html>

@@ -313,16 +313,51 @@ h2 {
 }
 /* -----VIDEO-----*/
 
-.fellow-man {
+.tracks {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 1.4rem;
 }
 
+#playlist {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+
+#playlist li {
+    padding: 0.3rem;
+}
+
+#playlist li a {
+    color: #eee;
+    text-decoration: none;
+}
+
+#playlist .current-song a {
+    color: rgb(243,129,62);
+}
+
+
 audio {
-    margin: 2rem 0;
     width: 100%;
+
+}
+
+.iframes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+}
+
+.bandcamp {
+    width: 700px;
+    height: 241px;
+    margin-bottom: 3rem;
 }
 
 .video {
@@ -343,19 +378,6 @@ audio {
 video {
     width: 100%;
     height: auto
-}
-.iframes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 3rem;
-    
-}
-.bandcamp {
-    width: 700px;
-    height: 241px;
-    margin-bottom: 3rem;
-
 }
 
 
@@ -386,8 +408,8 @@ video {
 }
 
 .gorilla {
-    width: 22.5rem;
-    height: 22.5rem;
+    width: 20rem;
+    height: 20rem;
     margin: 0 auto;
     border-radius: 100px;
 }
