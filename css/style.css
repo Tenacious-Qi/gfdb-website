@@ -78,11 +78,6 @@ nav {
     transition: 0.3s;
 }
 
-.logo {
-
-    border-radius: 20px;
-    padding: 0 .2rem;
-}
 
 
 /* -----HEADING-----*/
@@ -416,6 +411,7 @@ audio {
     font-size: 1.5rem;
     margin: 2rem;
     text-align: center;
+
 }
 
 video {
@@ -596,11 +592,6 @@ footer {
     flex: 1;
 }
 
-
-.logo-joint {
-    padding: 0 1.8rem .7rem 1.8rem;
-}
-
 ion-icon:hover {
     color: #fff;
     transition: 0.3s;
@@ -647,7 +638,7 @@ i {
 @media screen and (max-width: 600px) {
     
     .nav-left a {
-        margin: 0 .8rem;
+        padding: 0 .9rem;
     }
 
     
