@@ -473,7 +473,7 @@ video {
 .gorilla {
     width: 20rem;
     height: 20rem;
-    margin: 0 auto;
+    margin: 2rem auto;
     border-radius: 100px;
 }
 
@@ -505,15 +505,20 @@ video {
 
 }
 
+.form-list li:nth-of-type(2) {
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
 .form-list li a {
-    color:#eee;
+    color: rgb(243,129,62);
     text-decoration: none;
-    border-bottom: 2px solid rgb(151, 44, 49);
+    border-bottom: 2px solid rgb(79, 134, 70);
 }
 
 .form-list li a:hover {
     color: rgb(243, 186, 36);
-    border-bottom: 2px solid rgb(79, 134, 70);
+    border-bottom: 2px solid #eee;
     transition: .3s;
 }
 
