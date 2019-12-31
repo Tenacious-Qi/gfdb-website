@@ -318,11 +318,12 @@ span a i {
 
 .lineup .instrument {
     font-size: 1.6rem;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 400;
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 1.5rem;
+    letter-spacing: .2rem;
 } 
 
 .member {
@@ -726,7 +727,7 @@ i {
     }
     
     .lineup .instrument {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .form-messages {
