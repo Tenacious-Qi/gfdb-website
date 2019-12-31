@@ -214,11 +214,23 @@ h2 {
     max-height: 340px;
 }
 
-.tickets {
+span .tickets {
     text-decoration: none;
     color: rgb(243,186,36);
-    border-bottom: 2px solid rgb(151, 44, 49);
+    border-bottom: 2px solid rgb(79, 134, 70);
     padding: 5px 0;
+}
+
+span .tickets:hover {
+    color: #eee;
+}
+
+span a i {
+    position: relative;
+    top: 8px;
+    left: 8px;
+    color: rgb(243,186,36);
+
 }
 
 
@@ -228,14 +240,14 @@ h2 {
     transition: 0.3s;
 }
 
-.empty-link {
+/* .empty-link {
     position:absolute; 
     width:100%;
     height:100%;
     top:0;
     left: 0;
     z-index: 1; 
-}
+} */
 
 
 .shows-list span {
