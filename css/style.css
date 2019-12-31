@@ -505,9 +505,16 @@ video {
 
 }
 
-.form-list li:nth-child(2) {
-    font-style: italic;
-    font-size: 1.3rem;
+.form-list li a {
+    color:#eee;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(151, 44, 49);
+}
+
+.form-list li a:hover {
+    color: rgb(243, 186, 36);
+    border-bottom: 2px solid rgb(79, 134, 70);
+    transition: .3s;
 }
 
 .form-list > li:not(:last-child) {
@@ -550,6 +557,7 @@ video {
 .contact-info {
     margin-left: 4.5rem;
 }
+
 
 .contact-info:last-child {
     margin-bottom: 2rem;
