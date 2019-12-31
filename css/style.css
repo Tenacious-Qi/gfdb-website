@@ -214,6 +214,15 @@ h2 {
     max-height: 340px;
 }
 
+.tickets {
+    text-decoration: none;
+    color: rgb(243,186,36);
+    border-bottom: 2px solid rgb(151, 44, 49);
+    padding: 5px 0;
+}
+
+
+
 .event:hover {
     color: rgb(243,186,36);
     transition: 0.3s;
@@ -238,6 +247,8 @@ h2 {
 .show-venue {
     padding: 2rem;
 }
+
+
 
 /* -----MEMBERS-----*/
 
@@ -633,6 +644,12 @@ i {
         width: 90rem;
     }
 
+}
+
+@media screen and (min-width: 1600px) {
+    .about__header--description {
+        margin: 2rem 40rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
