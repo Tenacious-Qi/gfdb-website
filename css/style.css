@@ -12,7 +12,6 @@ blue-green: rgb(33, 109, 153)
 
 */
 
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -22,6 +21,8 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    border: none;
+    outline: none;
 }
 
 body {
@@ -62,8 +63,6 @@ nav {
     flex: 1;
 }
 
-
-
 .nav-links a {
     text-decoration: none;
     color: rgb(243,186,36);
@@ -78,10 +77,7 @@ nav {
     transition: 0.3s;
 }
 
-
-
 /* -----HEADING-----*/
-
 
 .hero-section {
 
@@ -115,7 +111,6 @@ nav {
     margin-bottom: 10%;
 }
 
-
 /* -----BUTTON----*/
 
 .btn:link,
@@ -139,13 +134,11 @@ nav {
 
 /* -----MAIN SECTION-----*/
 
-
 .about, .members, .shows {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 
 h2 {
     text-align: center;
@@ -156,13 +149,11 @@ h2 {
     text-shadow: 0.1rem 0.1rem 0.1rem rgb(26, 25, 29);
 }
 
-
 .about__header--band {
     border-bottom: 2px solid rgb(151, 44, 49);
     padding-bottom: 1.5rem;
 
 }
-
 
 .about__header--description {
     font-size: 2rem;
@@ -172,8 +163,6 @@ h2 {
 .about__header--description p {
     margin-bottom: 2rem;
 }
-
-
 
 /* -----SHOWS-----*/
 
@@ -234,21 +223,10 @@ span a i {
 }
 
 
-
 .event:hover {
     color: rgb(243,186,36);
     transition: 0.3s;
 }
-
-/* .empty-link {
-    position:absolute; 
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-    z-index: 1; 
-} */
-
 
 .shows-list span {
     display: block;
@@ -259,8 +237,6 @@ span a i {
 .show-venue {
     padding: 2rem;
 }
-
-
 
 /* -----MEMBERS-----*/
 
@@ -288,9 +264,7 @@ span a i {
 .members-img img {
     min-width: 0;
     width: 100%;
-
 }
-
 
 .members-header-contain {
     margin: auto;
@@ -338,73 +312,167 @@ span a i {
     justify-content: center;
 }
 
-audio {
-    width: 50rem;
-    margin-left: 2px;
+
+.clearfix {
+    clear:both;
 }
 
-.tracks {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+#container {
+    width: 320px;
+    min-height: 400px;
+    overflow: auto;
+    margin: 1rem auto;
+    border: rgb(151, 44, 49) solid 3px;
+    -moz-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(79, 134, 70);
+    
 }
 
-.tracks p {
-    font-size: 1.43rem;
-    margin: 1.5rem;
+#audio-img {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+#audio-info {
     text-align: center;
 }
 
+#audio-info .title {
+    font-weight: bold;
+    color: rgb(243,129,62);
+    font-size: 1.7rem;
+}
+
+.cover {
+    width: 100%;
+    z-index: 1;
+}
+
+input#volume {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#audio-buttons {
+    width: 90%;
+    display: block;
+    margin: 15px auto;
+    margin-left: 23px;
+    overflow: auto;
+    
+}
+
+button#play {
+    width: 70px;
+    height: 70px;
+    background: url(../img/audioplayer/play.png) no-repeat;
+    float: left;
+}
+
+button#pause {
+    width: 70px;
+    height: 70px;
+    background: url(../img/audioplayer/pause.png) no-repeat;
+    float: left;
+}
+
+button#stop {
+    width: 70px;
+    height: 70px;
+    background: url(../img/audioplayer/stop.png) no-repeat;
+    float: left;
+
+}
+
+button#prev {
+    width: 70px;
+    height: 70px;
+    background: url(../img/audioplayer/prev.png) no-repeat;
+    float: left;
+    margin-top: 15px;
+}
+
+button#next {
+    width: 70px;
+    height: 70px;
+    background: url(../img/audioplayer/next.png) no-repeat;
+    float: right;
+    margin-top: 15px;
+    float: right;
+}
 
 #playlist {
-
     list-style: none;
-    margin: 3rem 0;
-    padding: 2rem;
-    border-left: 2px solid rgb(151, 44, 49);
-    border-right: 2px solid rgb(151, 44, 49);
-    border-radius: 20px;
+    padding: 1rem;
 }
-
-#playlist span {
-    float: right;
-    padding-left: 2rem;
-    font-weight: 300;
-    color: rgb(243,129,62);
-}
-
 
 #playlist li {
-    padding: 0.3rem;
+    cursor: pointer;
+    padding: 5px;
+    letter-spacing: .15rem;
 }
 
-
-#playlist li a {
-    color: rgb(79, 134, 70);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.5rem;
+#playlist li span {
+    float: right;
 }
 
-#playlist .current-song a {
-    color: rgb(243,186,36);
+#playlist li.active {
+    font-weight: bold;
+    padding: 3px;
+    background: rgb(243,129,62);
+    border-radius: 1rem;
+    color: #222;
+    
 }
 
-#playlist hr {
-    margin: 1rem;
+#progressbar {
+    width: 80%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    margin-top: 9px;
+    height: 1rem;
+    background: url(../img/audioplayer/progress_bg.png) no-repeat;
+    float: left;
 }
 
+#progress {
+    background: url(../img/audioplayer/progress.png) no-repeat;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+}
 
+#duration {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    padding: 4px 9px;
+    background: #000;
+    -moz-border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    border-radius: 1rem;
+}
 
+#tracker {
+    position: relative;
+    width: 100%;
+}
 
 .iframe-message {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 2rem;
     text-align: center;
+    margin: 2rem .75rem;
 }
 
 
@@ -428,22 +496,12 @@ audio {
     margin-bottom: 2rem;
 }
 
-.video-message {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5rem;
-    margin: 2rem;
-    text-align: center;
-
-}
 
 video {
     width: 100%;
     height: auto;
 
 }
-
 
 /* -----CONTACT-----*/
 
@@ -598,8 +656,6 @@ video {
     transition: .4s;
 }
 
-
-
 /* -----FOOTER-----*/
 
 footer {
@@ -614,7 +670,6 @@ footer {
     border-top: 2px solid rgb(79, 134, 70);
     
 }
-
 .social-list {
     display: flex;
     align-items: center;

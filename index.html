@@ -25,7 +25,7 @@
                     <li class="nav-item"><a href="#band">Band</a></li>
                     <li class="nav-item"><a href="#shows">Shows</a></li>
                 </ul>
-                <a href=#band><img class="logo-joint" src="img/gorillaslap-01-logo.png"  alt=gorillafinger-logo-joint></a>
+                <a href=#contact><img class="logo-joint" src="img/gorillaslap-01-logo.png"  alt=gorillafinger-logo-joint></a>
                 <ul class="nav-links nav-right">
                     <li class="nav-item"><a href="#contact">Contact</a></li>
                     <li class="nav-item"><a href="#gallery">Gallery</a></li>
@@ -163,38 +163,61 @@
 
             <section class="video" id="video">
                     <div class="video-header"><h2 class="music">music</h2></div>
-                    <div class="tracks">
-                        <audio src="" controls id="audioPlayer">
-                            <source src="" type="audio/mp4">
-                                Sorry, your browser doesn't support HTML5!
-                        </audio>
-                        <p>Stream <em>Live on 4/20</em> and our first album, <em>Cool it Down</em></p>
-                        <ul id="playlist">
-                            <li class="current-song"><a href="audio/Liveon420/01SomeofYourLove.mp3">Some of Your Love<span class="current-song">Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/02Fellow Man_Dub 01.mp3">Fellow Man/Dub 01<span class="album">Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/03TakeItSlow.mp3">Take It Slow<span class="album">Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/04LetItGrow.mp3">Let It Grow<span class="album"> Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/05Hometown.mp3">Hometown<span class="album"> Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/06Busted.mp3">Busted<span class="album"> Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/07Best Herb.mp3">Best Herb<span class="album"> Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/08Kannabosm.mp3">Kannabosm<span class="album"> Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/09Smokin'Vibe.mp3">Smokin' Vibe<span class="album"> Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/10ChildoftheNight.mp3">Child of the Night<span class="album"> Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/11StepBack.mp3">Step Back<span class="album"> Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/12OMisterOfficer.mp3">O Mister Officer<span class="album"> Live on 4/20</span></a></li>
-                            <li><a href="audio/Liveon420/13GetGo.mp3">Get Go<span class="album"> Live on 4/20</span></a></li>
-                            
-    
-                            <hr>
-                            <li><a href="audio/Busted.mp3">Busted<span class="album">Cool it Down</span></a></li>
-                            <li><a href="audio/OMisterOfficer.mp3">O Mister Officer<span class="album">Cool it Down</span></a></li>
-                            <li><a href="audio/CoolItDown.mp3">Cool It Down<span class="album">Cool it Down</span></a></li>
-                            <li><a href="audio/SoLovely.mp3">So Lovely<span class="album">Cool it Down</span></a></li>
-                            <li><a href="audio/StepBack.mp3">Step Back<span class="album">Cool it Down</span></a></li>
-                            <li><a href="audio/BestHerb.mp3">Best Herb<span class="album">Cool it Down</span></a></li>
-                            <li><a href="audio/Kannabosm.mp3">Kannabosm<span class="album">Cool it Down</span></a></li>
-                            <li><a href="audio/Hometown.mp3">Hometown<span class="album">Cool it Down</span></a></li>
-                        </ul>
+                    <div class="iframe-message">
+                        <p>Stream <em>Live on 4/20</em> and our first album <em>Cool It Down</em> below</p>
+                    </div>
+                    <div id="container">
+                    
+                        <div id="audio-img">
+                            <img class="cover">
+                        </div>
+                        <div id="audio-player">
+                            <div id="audio-info">
+                                <span class="title"></span>
+                            </div>
+                            <input id="volume" type="range" min="0" max="10" value="8">
+                            <br>
+                            <div id="audio-buttons">
+                              
+                                    <button id="prev"></button>
+                                    <button id="play"></button>
+                                    <button id="pause"></button>
+                                    <button id="stop"></button>
+                                    <button id="next"></button>
+                                    
+                            </div>
+                            <div class="clearfix"></div>
+                            <div id="tracker">
+                                <div id="progressbar">
+                                    <span id="progress"></span>
+                                </div>
+                                <span id="duration"></span>
+                            </div>
+                            <div class="clearfix"></div>
+                            <ul id="playlist">
+                                <li song="01SomeofYourLove.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Some of Your Love - <span>Live on 4/20</span></li>
+                                <li song="02Fellow Man_Dub 01.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Fellow Man/Dub 01 -  <span>Live on 4/20</span></li>
+                                <li song="03TakeItSlow.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Take it Slow - <span>Live on 4/20</span></li>
+                                <li song="04LetItGrow.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Let it Grow - <span>Live on 4/20</span></li>
+                                <li song="05Hometown.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Hometown - <span>Live on 4/20</span></li>
+                                <li song="06Busted.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Busted - <span>Live on 4/20</span></li>
+                                <li song="07Best Herb.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Best Herb - <span>Live on 4/20</span></li>
+                                <li song="08Kannabosm.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Kannabosm - <span>Live on 4/20</span></li>
+                                <li song="09Smokin'Vibe.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Smokin' Vibe - <span>Live on 4/20</span></li>
+                                <li song="10ChildoftheNight.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Child of the Night - <span>Live on 4/20</span></li>
+                                <li song="11StepBack.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Step Back - <span>Live on 4/20</span></li>
+                                <li song="12OMisterOfficer.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">O Mister Officer - <span>Live on 4/20</span></li>
+                                <li song="13GetGo.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Live on 4/20">Get Go - <span>Live on 4/20</span></li>
+                                <li song="BestHerb.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Cool It Down">Best Herb - <span>Cool It Down</span></li>
+                                <li song="Busted.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Cool It Down">Busted - <span>Cool It Down</span></li>
+                                <li song="CoolItDown.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Cool It Down">Cool It Down - <span>Cool It Down</span></li>
+                                <li song="Hometown.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Cool It Down">Hometown - <span>Cool It Down</span></li>
+                                <li song="Kannabosm.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Cool It Down">Kannabosm - <span>Cool It Down</span></li>
+                                <li song="OMisterOfficer.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Cool It Down">O Mister Officer - <span>Cool It Down</span></li>
+                                <li song="SoLovely.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Cool It Down">So Lovely - <span>Cool It Down</span></li>
+                                <li song="StepBack.mp3" cover="officialgfdbalbumphoto-small.jpg" album="Cool It Down">Step Back - <span>Cool It Down</span></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="iframe-message">
                         <p>Stream or download our EP <em>Stereo</em> on Bandcamp below</p>
@@ -202,8 +225,8 @@
                     <div class="iframes">
                         <iframe class="bandcamp" src="https://bandcamp.com/EmbeddedPlayer/album=3574947838/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" allowfullscreen allow="encrypted-media"></iframe>
                     </div>
-                    <div class="video-message">
-                        <p>Gorilla Finger live at Bob Marley tribute show</p>
+                    <div class="iframe-message">
+                        <p>Gorilla Finger live at Bob Marley tribute show:</p>
                     </div>
                     <video controls><source src="img/gorilla-finger-1-min.mp4" type="video/mp4">Your Browser does not support the video tag</video>
                     
@@ -296,8 +319,7 @@
                 
             </footer>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
-            <script src="js/audioPlayer.js"></script>
+            <script src="js/audioplayer.js"></script>
     </body>
     
 </html>

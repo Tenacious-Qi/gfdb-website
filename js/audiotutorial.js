@@ -108,11 +108,22 @@ function showDuration() {
         if (audio.currentTime > 0) {
             value = Math.floor((100 / audio.duration) * audio.currentTime);
         }
-        //After song ends play next song
         if( audio.currentTime >= audio.duration) $('#next').trigger('click');
         $('#progress').css('width', value+'%');
     });
 }
+
+// //After song ends play next song
+// $(audio).on("ended", function() {
+//     audio.pause();
+//     let next = $('#playlist li.active').next();
+//     if (next.length == 0) {
+//         next = $('#playlist li:first-child');
+//     }
+//     initAudio(next);
+//  audio.play();
+//  showDuration();
+// });
 
 //Plays a song on click
 $('#playlist li').click(function(){
