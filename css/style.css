@@ -803,12 +803,6 @@ i {
         margin-left: 1.5rem;
 }
 
-    audio {
-        width: 320px;
-    }
-    
-}
-
 
 @media screen and (max-height: 450px) {
     .hero-section h1 {
