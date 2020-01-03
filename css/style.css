@@ -603,6 +603,10 @@ video {
     border-radius: 2px;
     
 }
+textarea {
+    width: 180px;
+    height: 160px;
+}
 .btn-submit {
     padding: 1rem 2rem;
     border: none;
