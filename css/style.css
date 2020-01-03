@@ -327,15 +327,15 @@ span a i {
     -webkit-border-radius: 1rem;
     border-radius: 1rem;
     font-size: 1.5rem;
-    background-color: rgb(79, 134, 70);
+    background: linear-gradient(-45deg, rgb(79, 134, 70), rgb(18, 48, 14));
     
 }
 
 #audio-img {
     position: relative;
     overflow: hidden;
-    height: 200px;
-    margin-bottom: 15px;
+    height: 300px;
+    margin-bottom: 10px;
 }
 
 #audio-info {
@@ -343,9 +343,10 @@ span a i {
 }
 
 #audio-info .title {
-    font-weight: bold;
+    font-weight: 600;
     color: rgb(243,129,62);
     font-size: 1.7rem;
+    letter-spacing: .1rem;
 }
 
 .cover {
@@ -403,7 +404,6 @@ button#next {
     background: url(../img/audioplayer/next.png) no-repeat;
     float: right;
     margin-top: 15px;
-    float: right;
 }
 
 #playlist {
